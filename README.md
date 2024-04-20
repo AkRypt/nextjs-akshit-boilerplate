@@ -1,11 +1,11 @@
 ## Akshit Nextjs Boilerplate
 Environment:
-Frontend: Next.js
-Styling: Tailwind & DaisyUI
-Auth: Supabase Auth
-Payment: Stripe
-🔼 Deploy on Vercel
-✅ SEO Optimized
+- Frontend: Next.js
+- Styling: Tailwind & DaisyUI
+- Auth: Supabase Auth
+- Payment: Stripe
+- 🔼 Deploy on Vercel
+- ✅ SEO Optimized
 
 ```
 npm run dev
