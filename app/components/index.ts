@@ -1,14 +1,6 @@
-import GoogleButton from "./googleButton"
-import GoogleMiniButton from "./googleMiniButton"
-import Loading from "./loading"
-import ReloadModal from "./reloadModal"
-import SignOutButton from "./signOutButton"
-
-
-export default {
-    GoogleButton,
-    GoogleMiniButton,
-    Loading,
-    ReloadModal,
-    SignOutButton,
-}
+export { default as GoogleButton } from "./googleButton"
+export { default as GoogleMiniButton } from "./googleMiniButton"
+export { default as Loading } from "./loading"
+export { default as ReloadModal } from "./reloadModal"
+export { default as SignOutButton } from "./signOutButton"
+export { default as SuccessToast } from "./successToast"

@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { constants } from "./constants";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { poppins } from "./fonts";
+import { notoSans } from "./fonts";
 
-const inter = Inter({ subsets: ["latin"] });
 const title = "<your title>"
 const description = "<your description>"
 
@@ -102,8 +100,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>
+    <html lang="en" data-theme="winter">
+      <body className={notoSans.className}>
         {children}
         <Analytics />
         <SpeedInsights />

@@ -7,12 +7,15 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   mode: "jit",
+  daisyui: {
+    themes: ["winter", "dark"],
+  },
   theme: {
     extend: {
       colors: {
-        "primary-bg": "#2c7c8d",
-        "secondary-bg": "#3B92A2",
-        "action-bg": "#35F1B0",
+        "my-primary": "#2c7c8d",
+        "my-secondary": "#3B92A2",
+        "my-action": "#35F1B0",
         google: {
           'text-gray': '#3c4043',
           'button-blue': '#1a73e8',
@@ -28,6 +31,9 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui")
+  ],
 };
 export default config;

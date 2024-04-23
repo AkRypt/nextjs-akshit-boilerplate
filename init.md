@@ -1,3 +1,9 @@
+## Change name of site in:
+- constants.ts
+- layout.tsx
+- package.json
+- package.lock.json
+
 ## Update your .env.local
 
 ## To improve SEO, update:

@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 76, 192, 214;
-  --background-end-rgb: 129, 202, 214;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -18,10 +18,8 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* background: rgb(var(--background-start-rgb)); */
-  /* background: #90d2c0; */
-  /* background: #2c7c8d; */
   background: white;
+  /* background: linear-gradient(to bottom right, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb))); */
 }
 
 @layer utilities {
@@ -31,8 +29,10 @@ body {
 }
 
 /* Custom Changes */
-@layer base {
-  h1, p {
-    @apply text-white;
-  }
+.btn-primary {
+  @apply text-white bg-gradient-to-br from-cyan-600 to-blue-500 hover:from-blue-600 hover:to-blue-500;
+}
+
+.btn-error {
+  @apply text-white bg-gradient-to-br from-red-600 to-red-400 hover:from-red-700 hover:to-red-500;
 }
